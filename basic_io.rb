@@ -1,4 +1,3 @@
-
 # Instantiate a file object
 file = File.new('file1.txt', 'w') 
 
@@ -13,6 +12,7 @@ file = File.new('file1.txt', 'r')
 
 # if the mode(rights) of the file above is not read the following code will not be executed, returns an error
 if file
+# This outputs the first 20 characters of the content
    content = file.sysread(20) 
   puts content
 else
