@@ -10,7 +10,7 @@ file.close
 
 file = File.open('makes_models.csv', 'r') 
 
-if file = file.sysread(200) 
+if file = File.readlines('makes_models.csv') 
   
   puts file
 
